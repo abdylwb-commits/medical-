@@ -32,9 +32,28 @@ Developed by **Rana Abdul Wahab**
 3. Terminal / CMD me ye likhein: python medical_store.py
 
 🧾 Example - Bill Kaise Banega
-Kya Chahiya :: Panadol, Quantity :: 2
-Kya Chahiya :: Eno, Quantity :: 1
-Gross Total : 928
+----- Kya Chahiya :: Panadol
+----- Kitni Quantity :: 2
+----- Aur Kuch Chahiye? Y/N y
+----- Kya Chahiya :: Eno
+----- Kitni Quantity :: 1
+----- Aur Kuch Chahiye? Y/N n
+*Output Bill:*
+                  CLINIX +
+          THE MEDICINE SUPERSTORE
+                  Bukhari Pharmacy
+     Block#16. Near Girls Degree College, KW
+          Phone #: 065-2554412, 2557912
+___________________________________________________
+  Item Name        Qt        Price       Total Bill
+___________________________________________________
+  Panadol           2         350         700
+  Eno               1         228         228
+___________________________________________________
+  Gross Total : 928
+___________________________________________________
+🛠️ Technology
+
 
 🛠️ Technology
 - Language: Python
@@ -46,4 +65,22 @@ Computer Software developed by Rana Abdul Wahab
 Consultancy: 03685785482
 
 ⭐ Agar ye project pasand aaye to Star zaroor dein!
+
+
+---
+⭐ Agar ye project pasand aaye to Star zaroor dein!
+
+---
+
+**Ab isko lagana kaise hai?**
+
+1. GitHub me apne repository me jao
+2. `Add file` -> `Create new file`
+3. Naam likho: `README.md`
+4. Upar wala poora code paste kar do
+5. `Commit changes` dabao
+
+Bas! Ab tumhara repository bilkul professional lagega, jaise bare developers ka hota hai.
+
+Batao, is me apna WhatsApp number ya photo bhi lagana hai?
 
