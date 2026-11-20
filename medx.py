@@ -1,0 +1,122 @@
+print("----------<  WELCOME TO MEDICAL SOFTWARE  >-------- ")
+
+
+items = {
+    # Bukhar / Dard
+    "Panadol": 350,
+    "Brufun": 300,
+    "Disprin": 50,
+    "Ponstan": 150,
+    "Calpol": 200,
+
+    # Pet / Maida
+    "Eno": 228,
+    "Gasoline": 227,
+    "Gaviscon": 450,
+    "Risek": 380,
+    "Flygel": 180,
+
+    # Nazla / Khansi
+    "Arinac": 250,
+    "Corex": 120,
+    "Hydryllin": 180,
+    "Sancos": 90,
+    "Vicks": 300,
+
+    # Antibiotic
+    "Azomax": 550,
+    "Augmentin": 800,
+    "Velosef": 600,
+    "Ciprofloxacin": 300,
+    "Erythromycin": 250,
+
+    # Diabetes / BP
+    "Glucophage": 400,
+    "Getryl": 350,
+    "Lowplat": 500,
+    "Inderal": 200,
+    "Cardace": 600,
+
+    # Vitamins
+    "Surbex Z": 500,
+    "Osnate D": 700,
+    "CaC 1000": 900,
+    "Evion": 300,
+    "Folic Acid": 100,
+
+    # Bacho ki dawai
+    "Gravinate": 150,
+    "Domel": 120,
+    "Colic Drops": 200,
+    "Motilium": 250,
+
+    # Cheezen
+    "Thermometer": 500,
+    "BP Apparatus": 3500,
+    "Bandage": 80,
+    "Dettol": 250,
+    "Cotton Roll": 150,
+    "Hand Sanitizer": 200,
+    "Face Mask": 30,
+    "Tissue Box": 180,
+    "ORS": 50,
+    "Glucometer": 2500,
+    "Nebulizer": 6000,
+    "Wheel Chair": 15000,
+    "Hot Water Bottle": 600,
+    "Ice Bag": 450,
+    "Diapers": 1200
+}
+
+gross_total=0
+bill_items = []
+
+while True:
+    thing = input("----- Kya  Chahiya ::  ").strip().title()
+    if thing not in items:
+        print("Sorry, Ya Item Available Nhi Ha ")
+        continue
+
+
+    qty = int(input("----- Kitni Quantity :: "))
+
+
+    price = items[thing]
+    total = price * qty
+
+    gross_total+=total
+    bill_items.append([ thing,qty, price, total,])
+    if thing in items:
+        aur = input("----- Aur Kuch Chahiye? Y/N "). lower()
+    if aur!= "y":
+            break
+
+
+print("                  ClLINIX  + کلینکس")
+print("          THE    MEDICINE    SUPERSTORE")
+print("                  Bukhari Pharmacy")
+print("     Block#16. Near Girls Degree College, KW")
+print("          Phone #: 065-2554412,2557912")
+print("          Drug Lic #: 04-364-0045-022247P")
+print("  No : 55")
+
+print("  M/s : Cash Sales Walking Customer")
+print("  Remarks : Khalid")
+print("___________________________________________________")
+print("  Item Name        Qt        Price       Total Bill") 
+print("___________________________________________________")
+
+
+for item in bill_items:
+       print(f"  {  item[0] :<17} {item[1]:<10} {item[2]:<11} {item[3]}")
+
+
+
+
+print("___________________________________________________")
+print("  Gross Total : ",gross_total)
+
+print("___________________________________________________")
+
+
+print(" Computer Software developed by Rana Abdul Wahab    Consultancy  03685785482")
