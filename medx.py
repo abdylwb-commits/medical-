@@ -1,6 +1,4 @@
-
 print("----------<  WELCOME TO MEDICAL SOFTWARE  >-------- ")
-
 
 items = {
     # Bukhar / Dard
@@ -53,7 +51,8 @@ items = {
 
     # Cheezen
     "Thermometer": 500,
-    
+    "BpApparatus": 3500,
+    "Bandage": 80,
     "Dettol": 250,
     "Cotton Roll": 150,
     "Hand Sanitizer": 200,
@@ -94,7 +93,6 @@ while True:
     if aur!= "y":
             break
 
-
 print("                  ClLINIX  + کلینکس")
 print("          THE    MEDICINE    SUPERSTORE")
 print("                  Bukhari Pharmacy")
@@ -109,17 +107,14 @@ print("___________________________________________________")
 print("  Item Name        Qt        Price       Total Bill") 
 print("___________________________________________________")
 
-
 for item in bill_items:
        print(f"  {  item[0] :<17} {item[1]:<10} {item[2]:<11} {item[3]}")
-
-
-
 
 print("___________________________________________________")
 print("  Gross Total : ",gross_total)
 
 print("___________________________________________________")
 
-
 print(" Computer Software developed by Rana Abdul Wahab    Consultancy  03685785482")
+
+input("\nBand karne ke liye Enter dabao...")
