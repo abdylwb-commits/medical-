@@ -1,3 +1,4 @@
+
 print("----------<  WELCOME TO MEDICAL SOFTWARE  >-------- ")
 
 
@@ -40,7 +41,7 @@ items = {
     # Vitamins
     "Surbex Z": 500,
     "Osnate D": 700,
-    "CaC 1000": 900,
+    
     "Evion": 300,
     "Folic Acid": 100,
 
@@ -52,14 +53,13 @@ items = {
 
     # Cheezen
     "Thermometer": 500,
-    "BP Apparatus": 3500,
-    "Bandage": 80,
+    
     "Dettol": 250,
     "Cotton Roll": 150,
     "Hand Sanitizer": 200,
     "Face Mask": 30,
     "Tissue Box": 180,
-    "ORS": 50,
+    "Ors": 50,
     "Glucometer": 2500,
     "Nebulizer": 6000,
     "Wheel Chair": 15000,
@@ -77,13 +77,16 @@ while True:
         print("Sorry, Ya Item Available Nhi Ha ")
         continue
 
-
-    qty = int(input("----- Kitni Quantity :: "))
-
+    try:
+        qty = int(input("----- Kitni Quantity :: "))
+    except ValueError:
+        print("Sirf number likho, jaise 2")
+        continue
+   
 
     price = items[thing]
     total = price * qty
-
+    
     gross_total+=total
     bill_items.append([ thing,qty, price, total,])
     if thing in items:
